@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Kingdoms of Amalur: Re-Reckoning Checklist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checklist of side quests etc. for Kingdoms of Amalur: Re-Reckoning">
+    <meta name="author" content="Anthony Fischer">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jstorage.js"></script>
+    <script type="text/javascript">
+        var profilesKey = 'profiles';
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35576868-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <h1>Kingdoms of Amalur: Re-Reckoning Checklist</h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Side Quests</a></li>
+                    <li><a href="#tabDLCQuests" data-toggle="tab">DLC Side Quests and Tasks</a></li>
+					<li><a href="#tabTipsandTricks" data-toggle="tab">Tips and Tricks</a></li>
+                    <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+                </ul>
+                <div class="profile" style="float: right;">
+                    <div class="input-append">
+                        <select id="profiles">
+                        </select>
+                        <button class="btn" type="button" id="profileAdd">Add</button>
+                        <button class="btn" type="button" id="profileEdit">Edit</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro">
+
+            <p>
+                The following is a checklist of things to do in Kingdoms of Amalur: Re-Reckoning, mostly side quests
+				and tasks.  Repeatable tasks do not have a checkbox because they are not "completeable".  Main quests and faction quests are not included as they are fairly linear.  
+				It is a fork of <a href=https://github.com/smcnabb/dark-souls-cheat-sheet/>this guide</a>
+				which I found IMMENSELY helpful (and others like it) with my journey (read: painful slogging) through 
+				the soulsborne games. Re-Reckoning: Fate Edition went on sale, and I decided to make this to help 
+				myself make sure I got (close?) to 100% completion.  Quests are split up between areas, based on this 
+				guide, <a href=https://steamcommunity.com/sharedfiles/filedetails/?id=507201759>here</a>.  I will continue to add to this 
+				to include the three DLC.  Links are provided to amalur.wikia.com where available.
+            </p>
+            <p>
+                <em>Warning: Contains Spoilers!</em>
+            </p>
+
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="tabPlaythrough">
+
+                <h2>Side Quests and Tasks<span id="playthrough_overall_total"></span></h2>
+				<ul>
+				<h3><a href="https://amalur.fandom.com/wiki/Dalentarth">Dalentarth</a></h3>
+					<li><a href="#Odarath">Odarath</a><span id="playthrough_nav_totals_1"></span></li>
+					<li><a href="#Yolvan">Yolvan</a><span id="playthrough_nav_totals_2"></span></li>
+					<li><a href="#Glendara">Glendara</a><span id="playthrough_nav_totals_3"></span></li>
+					<li><a href="#Lorca-Rane">Lorca-Rane</a><span id="playthrough_nav_totals_4"></span></li>
+					<li><a href="#Webwood">Webwood</a><span id="playthrough_nav_totals_5"></span></li>
+					<li><a href="#Ettinmere">Ettinmere</a><span id="playthrough_nav_totals_6"></span></li>
+					<li><a href="#Haxhi">Haxhi</a><span id="playthrough_nav_totals_7"></span></li>
+					<li><a href="#TheSidhe">The Sidhe</a><span id="playthrough_nav_totals_8"></span></li>
+					<li><a href="#Ysa">Ysa</a><span id="playthrough_nav_totals_9"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Plains_of_Erathell">Plains of Erathell</h3>
+					<li><a href="#TheWolds">The Wolds</a><span id="playthrough_nav_totals_10"></span></li>
+					<li><a href="#Tala-Rane">Tala-Rane</a><span id="playthrough_nav_totals_11"></span></li>
+					<li><a href="#Kandrian">Kandrian</a><span id="playthrough_nav_totals_12"></span></li>
+					<li><a href="#TywiliCoast">Tywili Coast</a><span id="playthrough_nav_totals_13"></span></li>
+					<li><a href="#Galafor">Galafor</a><span id="playthrough_nav_totals_14"></span></li>
+					<li><a href="#ForsakenPlain">Forsaken Plain</a><span id="playthrough_nav_totals_15"></span></li>
+					<li><a href="#CradleofSummer">Cradle of Summer</a><span id="playthrough_nav_totals_16"></span></li>
+					<li><a href="#Rathir">Rathir</a><span id="playthrough_nav_totals_17"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Detyre">Detyre</h3>
+					<li><a href="#TheRedMarches">The Red Marches</a><span id="playthrough_nav_totals_18"></span></li>
+					<li><a href="#Alserund">Aslerund</a><span id="playthrough_nav_totals_19"></span></li>
+					<li><a href="#TheHollowlands">The Hollowlands</a><span id="playthrough_nav_totals_20"></span></li>
+					<li><a href="#Menetyre">Menetyre</a><span id="playthrough_nav_totals_21"></span></li>
+					<li><a href="#Apotyre">Apotyre</a><span id="playthrough_nav_totals_22"></span></li>
+					<li><a href="#Adessa">Adessa</a><span id="playthrough_nav_totals_23"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Klurikon">Klurikon</a></h3>
+				<li><a href="#MelSenshir">Mel Senshir</a><span id="playthrough_nav_totals_24"></span></li>
+				<li><a href="#Cursewood">Cursewood</a><span id="playthrough_nav_totals_25"></span></li>
+				<li><a href="#TheMidden">The Midden</a><span id="playthrough_nav_totals_26"></span></li>
+				<li><a href="#TheKeening">The Keening</a><span id="playthrough_nav_totals_27"></span></li>
+				<li><a href="#DrownedForest">Drowned Forest</a><span id="playthrough_nav_totals_28"></span></li>
+				<li><a href="#CaeledCoast">Caeled Coast</a><span id="playthrough_nav_totals_29"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Alabastra">Alabastra</a></h3>
+				<li><a href="#HighFulgen">High Fulgen</a><span id="playthrough_nav_totals_30"></span></li>
+				<li><a href="#ShadowPass">Shadow Pass</a><span id="playthrough_nav_totals_31"></span></li>
+				<li><a href="#TwilightPass">Twilight Pass</a><span id="playthrough_nav_totals_32"></span></li>
+				<li><a href="#Amaura">Amaura</a><span id="playthrough_nav_totals_33"></span></li>
+				</ul>
+				<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+
+                <a name="Odarath"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Odarath">Odarath</a><span id="playthrough_totals_1"></span></h3>
+                <ul>
+				<h4>Side Quests</h4>
+                <li data-id="playthrough_1_1"><a href="https://amalur.wikia.com/wiki/Building_Bridges">Building Bridges</a></li>
+				<li data-id="playthrough_1_2"><a href="https://amalur.wikia.com/wiki/Crisis_of_Faith">Crisis of Faith</a></li>
+				<li data-id="playthrough_1_3"><a href="https://amalur.wikia.com/wiki/Homecoming">Homecoming</a></li>
+				<li data-id="playthrough_1_4"><a href="https://amalur.wikia.com/wiki/Members_Only">Members Only</a></li>
+				<li data-id="playthrough_1_5"><a href="https://amalur.wikia.com/wiki/Out_of_the_Past">Out of the Past (Choice Required)</a></li>
+				<li data-id="playthrough_1_6"><a href="https://amalur.wikia.com/wiki/Recipe_for_Trouble">Recipe for Trouble</a></li>
+				<li data-id="playthrough_1_7"><a href="https://amalur.wikia.com/wiki/The_Flame_of_Rhyderk">The Flame of Rhyderk</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_1_8"><a href=http://amalur.wikia.com/wiki/Long_Overdue">Long Overdue</a></li>
+				</ul>
+				
+				<a name="Yolvan"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Yolvan">Yolvan</a><span id="playthrough_totals_2"></span></h3>
+                <ul>
+                <h4>Side Quests</h4>
+					<li data-id="playthrough_2_1"><a href="https://amalur.wikia.com/wiki/A_Brutal_Contract">A Brutal Contract (Choice Required)</a></li>
+					<li data-id="playthrough_2_2"><a href="https://amalur.wikia.com/wiki/Knowledge_Lost">Knowledge Lost</a></li>
+					<li data-id="playthrough_2_3"><a href="https://amalur.wikia.com/wiki/Rallying_Cry">Rallying Cry</a></li>
+					<li data-id="playthrough_2_4"><a href="https://amalur.wikia.com/wiki/Red_in_Tooth_and_Claw">Red in Tooth and Claw</a></li>
+					<li data-id="playthrough_2_5"><a href="https://amalur.wikia.com/wiki/Ungentle_Beasts">Ungentle Beasts</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_2_6"><a href="http://amalur.wikia.com/wiki/Reprisal,_Reprised">Reprisal, Reprised (Choice Required)</a></li>
+				</ul>
+				
+				<a name="Glendara"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Glendara">Glendara</a><span id="playthrough_totals_3"></span></h3>
+                <ul>
+                <h4>Side Quests</h4>
+				<li data-id="playthrough_3_1"><a href="http://amalur.wikia.com/wiki/Brother_Fallon%27s_Beads">Brother Fallon's Beads (Choice Required)</a></li>
+					<li data-id="playthrough_3_2"><a href="http://amalur.wikia.com/wiki/Plagueshield">Plagueshield</a></li>
+					<li data-id="playthrough_3_3"><a href="http://amalur.wikia.com/wiki/The_Natural_Order">The Natural Order</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Gathering_Flames">Gathering Flames</a>
+				</ul>
+				
+				<a name="Lorca-Rane"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Lorca-Rane">Lorca-Rane</a><span id="playthrough_totals_4"></span></h3>
+                <ul>
+                <h4>Side Quests</h4>
+					<li data-id="playthrough_4_1"><a href="http://amalur.wikia.com/wiki/Lost">Lost</a></li>
+					<li data-id="playthrough_4_2"><a href="http://amalur.wikia.com/wiki/The_Antelope">The Antelope (Choice Required)</a></li>
+					<li data-id="playthrough_4_3"><a href="http://amalur.wikia.com/wiki/The_Flowering">The Flowering (Choice Required)</a></li>
+				</ul>
+				
+				<a name="Webwood"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Webwood">Webwood</a><span id="playthrough_totals_5"></span></h3>
+                <ul>
+                <h4>Side Quests</h4>
+					<li data-id="playthrough_5_1"><a href="http://amalur.wikia.com/wiki/A_Tangled_Web">A Tangled Web (Choice Required)</a></li>
+					<li data-id="playthrough_5_2"><a href="http://amalur.wikia.com/wiki/Cutting_the_Threads">Cutting the Threads</a></li>
+					<li data-id="playthrough_5_3"><a href="http://amalur.wikia.com/wiki/Gossamer_End_%28Quest%29">Gossamer End</a></li>
+					<li data-id="playthrough_5_4"><a href="http://amalur.wikia.com/wiki/Grim_Harvest">Grim Harvest (Choice Required)</a></li>
+					<li data-id="playthrough_5_5"><a href="https://amalur.fandom.com/wiki/The_Treasures_of_Meropis">The Treasures of Meropis</a></li>
+					<li data-id="playthrough_5_6"><a href="http://amalur.wikia.com/wiki/The_Widow%27s_Wrath">The Widow's Wrath (Choice Required)</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_5_7"><a href="http://amalur.wikia.com/wiki/Hair_of_the_Dog">Hair of the Dog</a></li>
+				<li data-id="playthrough_5_8"><a href="http://amalur.wikia.com/wiki/Resting_the_Bones">Resting the Bones</a></li>
+				</ul>
+				
+				<a name="Ettinmere"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Ettinmere">Ettinmere</a><span id="playthrough_totals_6"></span></h3>
+                <h4>Side Quests</h4>
+				<ul>
+                    <li data-id="playthrough_6_1"><a href="http://amalur.wikia.com/wiki/Imelda%27s_Charm">Imelda's Charm</a></li>
+					<li data-id="playthrough_6_2"><a href="http://amalur.wikia.com/wiki/Shine_and_Shadow">Shine and Shadow (Choice Required)</a></li>
+					<li data-id="playthrough_6_3"><a href="http://amalur.wikia.com/wiki/The_Fisherman%27s_Bride">The Fisherman's Bride</a></li>
+				</ul>
+				
+				<a name="Haxhi"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Haxhi">Haxhi</a><span id="playthrough_totals_7"></span></h3>
+                <ul>
+				<h4>Side Quests</h4>
+                    <li data-id="playthrough_7_1"><a href="http://amalur.wikia.com/wiki/The_Height_of_Crime">The Height of Crime</a></li>
+					<li data-id="playthrough_7_2"><a href="http://amalur.wikia.com/wiki/A_Brutal_Contract">A Brutal Contract (Choice Required)</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Keeper_of_the_Keys">Keeper of the Keys</a>
+				</ul>
+				
+				<a name="TheSidhe"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/The_Sidhe">The Sidhe</a><span id="playthrough_totals_8"></span></h3>
+                <ul>
+				<h4>Side Quests</h4>
+                    <li data-id="playthrough_8_1"><a href="http://amalur.wikia.com/wiki/Aggressive_Brownies">Aggressive Brownies</a></li>
+					<li data-id="playthrough_8_2"><a href="http://amalur.wikia.com/wiki/Band_of_Brother_Monks">Band of Brother Monks</a></li>
+					<li data-id="playthrough_8_3"><a href="http://amalur.wikia.com/wiki/Dangers_of_the_Sidhe">Dangers of the Sidhe</a></li>
+					<li data-id="playthrough_8_4"><a href="http://amalur.wikia.com/wiki/Hunting_the_Thresh">Hunting the Thresh</a></li>
+					<li data-id="playthrough_8_5"><a href="https://amalur.fandom.com/wiki/Shadow_of_Enfamanir">Shadow of Enfamanir</a></li>
+					<li data-id="playthrough_8_6"><a href="http://amalur.wikia.com/wiki/The_Brownie_Den">The Brownie Den</a></li>
+				</ul>
+				
+				<a name="Ysa"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/Ysa">Ysa</a><span id="playthrough_totals_9"></span></h3>
+                <ul>
+                <h4>Side Quests</h4>
+					<li data-id="playthrough_9_1"><a href="http://amalur.wikia.com/wiki/Cureseeker">Cureseeker</a></li>
+					<li data-id="playthrough_9_2"><a href="http://amalur.wikia.com/wiki/Oh,_the_Indignitaries">Oh, the Indignitaries (Choice Required)</a></li>
+					<li data-id="playthrough_9_3"><a href="http://amalur.wikia.com/wiki/One_Drop">One Drop</a></li>
+					<li data-id="playthrough_9_4"><a href="http://amalur.wikia.com/wiki/Order_of_Operations">Order of Operations (Choice Required)</a></li>
+					<li data-id="playthrough_9_5"><a href="http://amalur.wikia.com/wiki/Uprising">Uprising (Choice Required)</a></li>
+					<li data-id="playthrough_9_6"><a href="http://amalur.wikia.com/wiki/What_Ales_You">What Ales You</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_9_7"><a href="http://amalur.wikia.com/wiki/Status_Symbol">Status Symbol</a></li>
+				</ul>
+				
+				<a name="TheWolds"></a>
+                <h3><a href="https://amalur.fandom.com/wiki/The_Wolds">The Wolds</a><span id="playthrough_totals_10"></span></h3>
+                <ul>
+				<h4>Side Quests</h4>
+                    <li data-id="playthrough_10_1"><a href="">Castor's Wrath</a></li>
+					<li data-id="playthrough_10_2"><a href="">Ratofer's Pawns/One Man's Trash (Choice Required)</a></li>
+					<li data-id="playthrough_10_3"><a href="">Strict Accounts</a></li>
+					<li data-id="playthrough_10_4"><a href="">The Erathell's Blessing</a></li>
+					<li data-id="playthrough_10_5"><a href="">The Waters of Madness</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Rogue_Harvest">Rogue Harvest</a>
+				</ul>
+
+				<a name="Tala-Rane"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Tala-Rane">Tala-Rane</a><span id="playthrough_totals_11"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_11_1"><a href="http://amalur.wikia.com/wiki/A_Pilgrim%27s_Setback">A Pilgrim's Setback</a></li>
+				<li data-id="playthrough_11_2"><a href="http://amalur.wikia.com/wiki/Bell,_Book_and_Candle">Bell, Book, and Candle</a></li>
+				<li data-id="playthrough_11_3"><a href="http://amalur.wikia.com/wiki/Niahm%27s_Labors">Niahm's Labors</a></li>
+				<li data-id="playthrough_11_4"><a href="http://amalur.wikia.com/wiki/The_Aster_Inheritance">The Aster Inheritance</a></li>
+				<li data-id="playthrough_11_5"><a href="http://amalur.wikia.com/wiki/Vane%27s_Luck">Vane's Luck</a></li>
+				<li data-id="playthrough_11_6"><a href="http://amalur.wikia.com/wiki/Wrest_from_Peace">Wrest from Peace</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Dangerous_Games">Dangerous Games</a>
+				</ul>
+			
+				<a name="Kandrian"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Kandrian">Kandrian</a><span id="playthrough_totals_12"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_12_1"><a href="http://amalur.wikia.com/wiki/Derfel%27s_Labors">Derfel's Labors</a></li>
+				<li data-id="playthrough_12_2"><a href="http://amalur.wikia.com/wiki/The_Best_Defense">The Best Defence</a></li>
+				<li data-id="playthrough_12_3"><a href="http://amalur.wikia.com/wiki/The_Tinker%27s_Daughter">The Tinker's Daughter</a></li>
+				</ul>
+
+				<a name="TywiliCoast"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Tywili_Coast">Tywili Coast</a><span id="playthrough_totals_13"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_13_1"><a href="http://amalur.wikia.com/wiki/Deserters%27_Desert">Deserter's Deserts</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Sartorial_Splendor">Sartorial Splendor</a>
+				</ul>
+
+				<a name="Galafor"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Galafor">Galafor</a><span id="playthrough_totals_14"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_14_1"><a href="http://amalur.wikia.com/wiki/Collections">Collections</a></li>
+				<li data-id="playthrough_14_2"><a href="https://amalur.fandom.com/wiki/Family_Arms">Family Arms</a></li>
+				<li data-id="playthrough_14_3"><a href="http://amalur.wikia.com/wiki/Out_of_the_Ruins">Out of the Ruins</a></li>
+				<li data-id="playthrough_14_4"><a href="http://amalur.wikia.com/wiki/The_Valley_of_the_Blessed_%28quest%29">The Valley of the Blessed (Choice Required)</a></li>
+				<li data-id="playthrough_14_5"><a href="http://amalur.wikia.com/wiki/Tirin%27s_Secret">Tirin's Secret</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/The_Secret_of_the_Fae_Pools">The Secret of the Fae Pools</a>
+				</ul>
+
+				<a name="ForsakenPlain"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Forsaken_Plain">Forsaken Plain</a><span id="playthrough_totals_15"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_15_1"><a href="http://amalur.wikia.com/wiki/Buried_Alive">Buried Alive</a></li>
+				<li data-id="playthrough_15_2"><a href="http://amalur.wikia.com/wiki/Raising_the_Dead">Raising the Dead</a></li>
+				<li data-id="playthrough_15_3"><a href="http://amalur.wikia.com/wiki/The_Treasure_of_Culn">The Treasures of Culn (Choice Required)</a></li>
+				<li data-id="playthrough_15_4"><a href="http://amalur.wikia.com/wiki/They_Walk_Among_Us">They Walk Among Us</a></li>
+				<li data-id="playthrough_15_5"><a href="http://amalur.wikia.com/wiki/Unlucky_Charm">Unlucky Charm (Choice Required)</a></li>
+				</ul>
+
+				<a name="CradleofSummer"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Cradle_of_Summer">Cradle of Summer</a><span id="playthrough_totals_16"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_16_1"><a href="http://amalur.wikia.com/wiki/Floodgates">Floodgates</a></li>
+				<li data-id="playthrough_16_2"><a href="http://amalur.wikia.com/wiki/Rivener_Tarsus">Rivener Tarsus</a></li>
+				<li data-id="playthrough_16_3"><a href="http://amalur.wikia.com/wiki/Sisterly_Love">Sisterly Love</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_16_4"><a href="http://amalur.wikia.com/wiki/Life%27s_Work">Life's Work</a></li>
+				</ul>
+
+				<a name="Rathir"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Rathir">Rathir</a><span id="playthrough_totals_17"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_17_1"><a href="https://amalur.fandom.com/wiki/A_Page-Turner">A Page-Turner</a></li>
+				<li data-id="playthrough_17_2"><a href="https://amalur.fandom.com/wiki/Learning_Curve">Learning Curve</a></li>
+				<li data-id="playthrough_17_3"><a href="http://amalur.wikia.com/wiki/A_Second_to_a_Duel">A Second to a Duel</a></li>
+				<li data-id="playthrough_17_4"><a href="http://amalur.wikia.com/wiki/Every_Sparrow_Fallen">Every Sparrow Gallen</a></li>
+				<li data-id="playthrough_17_5"><a href="http://amalur.wikia.com/wiki/Good_with_Locks">Good With Locks</a></li>
+				<li data-id="playthrough_17_6"><a href="http://amalur.wikia.com/wiki/Mixing_Business">Mixing Business (Choice Required)</a></li>
+				<li data-id="playthrough_17_7"><a href="http://amalur.wikia.com/wiki/The_Orison">The Orison</a></li>
+				<li data-id="playthrough_17_8"><a href="http://amalur.wikia.com/wiki/Tidings_of_War">Tidings of War</a></li>
+				<li data-id="playthrough_17_9"><a href="http://amalur.wikia.com/wiki/Bad_Blood">Bad Blood</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/Lyria%27s_Lost">Lyria's Lost (Bugged? Uncompleteable?)</a>
+				</ul>
+				
+				<a name="TheRedMarches"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/The_Red_Marches">The Red Marches</a><span id="playthrough_totals_18"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_18_1"><a href="http://amalur.wikia.com/wiki/Worth_Fighting_For">Worth Fighting For</a></li>
+				<li data-id="playthrough_18_2"><a href="https://amalur.fandom.com/wiki/His_Brother%27s_Keeper">His Brother's Keeper</a></li>
+				<li data-id="playthrough_18_3"><a href="http://amalur.wikia.com/wiki/Her_Righteous_Fury">Her Righteous Fury</a></li>
+				<li data-id="playthrough_18_4"><a href="https://amalur.fandom.com/wiki/Into_the_Breach">Into the Breach</a></li>
+				</ul>
+
+				<a name="Aslerund"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Aslerund">Aslerund</a><span id="playthrough_totals_19"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_19_1"><a href="http://amalur.wikia.com/wiki/Kidnapped">Kidnapped</a></li>
+				<li data-id="playthrough_19_2"><a href="http://amalur.wikia.com/wiki/Fellfire_Bloom">Fellfire Bloom</a></li>
+				<li data-id="playthrough_19_3"><a href="http://amalur.wikia.com/wiki/The_Crossing">The Crossing</a></li>
+				</ul>		
+
+				<a name="TheHollowlands"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/The_Hollowlands">The Hollowlands</a><span id="playthrough_totals_20"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_20_1"><a href="http://amalur.wikia.com/wiki/Fae_at_the_Mine">Fae at the Mine</a></li>
+				<li data-id="playthrough_20_2"><a href="https://amalur.fandom.com/wiki/Bloodbane">Bloodbane</a></li>
+				<li data-id="playthrough_20_3"><a href="http://amalur.wikia.com/wiki/Miners_in_the_Sand">Miners in the Sand</a></li>
+				<li data-id="playthrough_20_4"><a href="http://amalur.wikia.com/wiki/The_Century_Flowers">The Century Flowers</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_20_5"><a href="https://amalur.fandom.com/wiki/Aron_Excavations_(quest)">Aron Excavations</a></li>
+				</ul>
+
+				<a name="Menetyre"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Menetyre">Menetyre</a><span id="playthrough_totals_21"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_21_1"><a href="http://amalur.wikia.com/wiki/A_Master%27s_Touch">A Master's Touch</a></li>
+				<li data-id="playthrough_21_2"><a href="http://amalur.wikia.com/wiki/Making_Enemies">Making Enemies</a></li>
+				<li data-id="playthrough_21_3"><a href="http://amalur.wikia.com/wiki/Running_with_Scalpels">Running with Scalpels</a></li>
+				<li data-id="playthrough_21_4"><a href="http://amalur.wikia.com/wiki/Spider_Season">Spider Season</a></li>
+				<li data-id="playthrough_21_5"><a href="http://amalur.wikia.com/wiki/Time_of_Need">Time of Need</a></li>
+				<li data-id="playthrough_21_6"><a href="http://amalur.wikia.com/wiki/Whereabouts_Unknown">Whereabouts Unknown</a></li>
+				</ul>
+
+				<a name="Apotyre"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Apotyre">Apotyre</a><span id="playthrough_totals_22"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_22_1"><a href="http://amalur.wikia.com/wiki/Bone_Town">Bone Town</a></li>
+				<li data-id="playthrough_22_2"><a href="http://amalur.wikia.com/wiki/Missing_Keys">Missing Keys (Choice Required)</a></li>
+				<li data-id="playthrough_22_3"><a href="http://amalur.wikia.com/wiki/Opening_a_Vein">Opening a Vein</a></li>
+				<li data-id="playthrough_22_4"><a href="http://amalur.wikia.com/wiki/Runaways">Runaways</a></li>
+				<li data-id="playthrough_22_5"><a href="http://amalur.wikia.com/wiki/The_Messenger">The Messenger</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_22_6"><a href="http://amalur.wikia.com/wiki/Rock_Collection">Rock Collection</a></li>
+				<li data-id="playthrough_22_7"><a href="http://amalur.wikia.com/wiki/The_Cynrics">The Cynrics</a></li>
+				<li data-id="playthrough_22_8"><a href="http://amalur.wikia.com/wiki/The_Darkvari">The Darkvari</a></li>
+				<li data-id="playthrough_22_9"><a href="http://amalur.wikia.com/wiki/The_Zungars">The Zungars</a></li>
+				<li data-id="playthrough_22_10"><a href="http://amalur.wikia.com/wiki/Whitestone_Tarnished">Whitestone Tarnished</a></li>
+				<li data-id="playthrough_22_11"><a href="http://amalur.wikia.com/wiki/Dinner_Time">Dinner Time</a></li>
+				<li data-id="playthrough_22_12"><a href="http://amalur.wikia.com/wiki/Tinker%27s_Task">Tinker's Tank</a></li>
+				</ul>
+
+				<a name="Adessa"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Adessa">Adessa</a><span id="playthrough_totals_23"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_23_1"><a href="http://amalur.wikia.com/wiki/A_Silver_Tongue">A Silver Tongue (Choice Required)</a></li>
+				<li data-id="playthrough_23_2"><a href="http://amalur.wikia.com/wiki/Applied_Science">Applied Science</a></li>
+				<li data-id="playthrough_23_3"><a href="http://amalur.wikia.com/wiki/Community_Service">Community Service</a></li>
+				<li data-id="playthrough_23_4"><a href="http://amalur.wikia.com/wiki/Executive_Orders">Executive Orders</a></li>
+				<li data-id="playthrough_23_5"><a href="http://amalur.wikia.com/wiki/Hand-Delivered">Hand-Delivered</a></li>
+				<li data-id="playthrough_23_6"><a href="http://amalur.wikia.com/wiki/New_in_Town">New in Town</a></li>
+				<li data-id="playthrough_23_7"><a href="http://amalur.wikia.com/wiki/Paper_Trail">Paper Trail</a></li>
+				<li data-id="playthrough_23_8"><a href="http://amalur.wikia.com/wiki/Return_to_Sender">Return to Sender (Choice Required)</a></li>
+				<li data-id="playthrough_23_9"><a href="http://amalur.wikia.com/wiki/Shipping_Error">Shipping Error</a></li>
+				<li data-id="playthrough_23_10"><a href="http://amalur.wikia.com/wiki/The_Tithes_that_Bind">The Tithes that Bind</a></li>
+				<li data-id="playthrough_23_11"><a href="http://amalur.wikia.com/wiki/Under_Watch">Under Watch</a></li>
+				<h4>Tasks</h4>
+				<li data-id="playthrough_23_12"><a href="http://amalur.wikia.com/wiki/Lab_Assistant">Lab Assistant</a></li>
+				<a href="http://amalur.wikia.com/wiki/Sandstone_Villa_%28quest%29">Sandstone Villa</a>
+				</ul>
+
+				<a name="MelSenshir"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Mel_Senshir">Mel Senshir</a><span id="playthrough_totals_24"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_24_1"><a href="http://amalur.wikia.com/wiki/Malicious_Practices">Malicious Practices (Choice Required)</a></li>
+				<li data-id="playthrough_24_2"><a href="http://amalur.wikia.com/wiki/Remembrance">Remembrance</a></li>
+				<li data-id="playthrough_24_3"><a href="http://amalur.wikia.com/wiki/Rite_of_Honor">Rite of Honor</a></li>
+				</ul>
+
+				<a name="Cursewood"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Cursewood">Cursewood</a><span id="playthrough_totals_25"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_25_1"><a href="http://amalur.wikia.com/wiki/Deadeye_%28Quest%29">Deadeye</a></li>
+				<li data-id="playthrough_25_2"><a href="http://amalur.wikia.com/wiki/Eyes_and_Ears">Eyes and Ears</a></li>
+				</ul>
+
+				<a name="TheMidden"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/The_Midden">The Midden</a><span id="playthrough_totals_26"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_26_1"><a href="http://amalur.wikia.com/wiki/A_Time_to_Reap">A Time to Reap</a></li>
+				<li data-id="playthrough_26_2"><a href="http://amalur.wikia.com/wiki/Elf%27s_Best_Friend">Elf's Best Friend</a></li>
+				<li data-id="playthrough_26_3"><a href="http://amalur.wikia.com/wiki/On_the_Hunt">On the Hunt</a></li>
+				<h4>Tasks</h4>
+				<a href="http://amalur.wikia.com/wiki/In_Memoriam">In Memoriam (Bugged? Uncompleteable)</a>
+				</ul>
+
+				<a name="TheKeening"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/The_Keening">The Keening</a><span id="playthrough_totals_27"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_27_1"><a href="http://amalur.wikia.com/wiki/True_to_the_Cycle">True to the Cycle</a></li>
+				<li data-id="playthrough_27_2"><a href="http://amalur.wikia.com/wiki/Witch_Knight_of_Ghennig">Witch Knight of Ghennig</a></li>
+				</ul>
+
+				<a name="DrownedForest"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Drowned_Forest">Drowned Forest</a><span id="playthrough_totals_28"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_28_1"><a href="http://amalur.wikia.com/wiki/Spawning_Pools">Spawning Pools</a></li>
+				<li data-id="playthrough_28_2"><a href="http://amalur.wikia.com/wiki/Artifacts_and_Castles">Artifacts and Castles</a></li>
+				</ul>
+
+				<a name="CaeledCoast"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Caeled_Coast">Caeled Coast</a><span id="playthrough_totals_29"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_29_1"><a href="http://amalur.wikia.com/wiki/Brun_the_Bard_%28Quest%29">Brun the Bard</a></li>
+				<li data-id="playthrough_29_2"><a href="http://amalur.wikia.com/wiki/Ghosts_of_Seawatch">Ghosts of Seawatch</a></li>
+				<li data-id="playthrough_29_3"><a href="http://amalur.wikia.com/wiki/The_Blades_and_the_Seal">The Blades and the Seal</a></li>
+				<li data-id="playthrough_29_4"><a href="http://amalur.wikia.com/wiki/The_Lady%27s_Children">The Lady's Children</a></li>
+				<li data-id="playthrough_29_5"><a href="http://amalur.wikia.com/wiki/The_Lost_Squad">The Lost Squad</a></li>
+				<li data-id="playthrough_29_6"><a href="http://amalur.wikia.com/wiki/Worthy_of_Chernobog">Worthy of Chernobog</a></li>
+				<li data-id="playthrough_29_7"><a href="http://amalur.wikia.com/wiki/The_Last_Gastyr">The Last Gastyr</a></li>
+				</ul>
+
+				<a name="HighFulgen"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/High_Fulgen">High Fulgen</a><span id="playthrough_totals_30"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_30_1"><a href="http://amalur.wikia.com/wiki/Bolgan_Bane">Bolgan Bane</a></li>
+				<li data-id="playthrough_30_2"><a href="http://amalur.wikia.com/wiki/The_Siege_of_Moondown">The Siege of Moondown</a></li>
+				</ul>
+
+				<a name="ShadowPass"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Shadow_Pass">Shadow Pass</a><span id="playthrough_totals_31"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_31_1"><a href="http://amalur.wikia.com/wiki/The_Killing_Ground">The Killing Ground</a></li>
+				</ul>
+
+				<a name="TwilightPass"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Twilight_Pass">Twilight Pass</a><span id="playthrough_totals_32"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_32_1"><a href="http://amalur.wikia.com/wiki/Esha_%28Quest%29">Esha</a></li>
+				<li data-id="playthrough_32_2"><a href="http://amalur.wikia.com/wiki/Gask_%28Quest%29">Gask</a></li>
+				<li data-id="playthrough_32_3"><a href="http://amalur.wikia.com/wiki/Ordo_%28Quest%29">Ordo</a></li>
+				<li data-id="playthrough_32_4"><a href="http://amalur.wikia.com/wiki/Bareth_%28Quest%29">Bareth</a></li>
+				</ul>
+
+				<a name="Amaura"></a>
+				<h3><a href="https://amalur.fandom.com/wiki/Amaura">Amaura</a><span id="playthrough_totals_33"></span></h3>
+				<ul>
+				<h4>Side Quests</h4>
+				<li data-id="playthrough_33_1"><a href="http://amalur.wikia.com/wiki/Master_Belne_%28Quest%29">Master Belne</a></li>
+				<li data-id="playthrough_33_2"><a href="http://amalur.wikia.com/wiki/Master_Farraglen_%28Quest%29">Master Farraglen</a></li>
+				<li data-id="playthrough_33_3"><a href="http://amalur.wikia.com/wiki/Master_Kiftal_%28Quest%29">Master Kiftal</a></li>
+				<li data-id="playthrough_33_4"><a href="http://amalur.wikia.com/wiki/Heroes_Shall_Not_Pass">Heroes Shall Not Pass</a></li>
+				</ul>
+		
+            </div>
+
+			<div class="tab-pane" id="tabDLCQuests">
+				
+				<h2>DLC Side Quests and Tasks<span id="dlc_overall_total"></span></h2>
+				<ul>
+				<h3><a href="https://amalur.fandom.com/wiki/Gallows_End">Gallows End (The Legend of Dead Kel)</a></h3>
+					<li><a href="#"></a><span id="dlc_nav_totals_1"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Teeth_of_Naros_(location)">Teeth of Naros (The Teeth of Naros)</h3>
+					<li><a href="#"></a><span id="dlc_nav_totals_2"></span></li>
+				<h3><a href="https://amalur.fandom.com/wiki/Mithros">Mithros (Fatesworn)</h3>
+					<li><a href="#"></a><span id="dlc_nav_totals_3"></span></li>
+				
+            </div>
+		
+            <div class="tab-pane" id="tabTipsandTricks">
+				
+				<p>
+				A list of things I found helpful, like common/rare salvage parts, etc.  Coming soon.
+				</p>
+				
+            </div>    
+		
+		
+            <div class="tab-pane" id="tabHelp">
+
+                <h2>Help</h2>
+
+                <h3>Is this a guide?</h3>
+                <p>
+                    No.  This is simply a checklist of side quests, etc. to help make sure you get 100% completion 
+					(but this is not a 100% completion guide).  I made it in part to help make sure I did all quests 
+					in a particular area to coincide with the anti-overlevelling and area cap guide, which you can read 
+					more about <a href="https://amalur.fandom.com/wiki/Area-Level_Cap_and_%22Anti-Overlevelling%22_Guide">here</a>.
+					
+                </p>
+
+                <h3>Can I use this for multiple characters?</h3>
+                <p>
+                    Yup, use the profile selector and buttons at the top right of the page to setup multiple
+                    characters.
+                </p>
+
+                <h3>How do I help with feedback, corrections, suggestions or additions?</h3>
+                <p>
+                    Create a new issue or fork and submit a pull request.  I might get to it.
+                </p>
+
+                <h3>How does the checklist status get saved?</h3>
+                <p>
+                    It gets saved to the local storage in your browser and not to any database or API. So if you are
+                    clearing your browser cache make sure not to delete the site data or your checklists will
+                    get reset.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="profileModal" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="profileModalTitle">Profile</h3>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="profileModalName">Name</label>
+                    <div class="controls">
+                        <input type="text" id="profileModalName" placeholder="Enter profile name">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="profileModalClose" class="btn">Close</a>
+            <a href="#" id="profileModalAdd" class="btn btn-primary">Add</a>
+            <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+            <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</body>
+</html>
